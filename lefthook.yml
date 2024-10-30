@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      runner: 'npx eslint src --ext .ts,.tsx'
+      include: '**/*.{ts,tsx}'
+    prettier:
+      runner: 'npx prettier --write .'
+      include: '**/*.{js,jsx,ts,tsx,css,scss,json,md}'
+    vitest:
+      runner: 'npx vitest run --changed'
+      include: '**/*.{ts,tsx}'
+
+pre-push:
+  parallel: true
+  commands:
+    test:
+      runner: 'npx vitest run'
