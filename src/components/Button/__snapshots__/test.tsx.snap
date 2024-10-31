@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > should match snapshot 1`] = `
+<button
+  class="w-full flex items-center gap-2 rounded-md font-semibold focus:outline-primary-500 disabled:pointer-events-none disabled:opacity-50 transition-colors duration-150 text-base px-4 py-2 bg-primary-500 text-white hover:bg-primary-600"
+/>
+`;
