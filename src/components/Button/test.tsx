@@ -5,7 +5,7 @@ describe('Button', () => {
   it('should render a button by default', () => {
     render(<Button>button</Button>);
 
-    const button = screen.getByRole('button', { name: /Button/gi });
+    const button = screen.getByRole('button', { name: /button/i });
 
     expect(button).toBeInTheDocument();
     expect(button).toHaveClass(
