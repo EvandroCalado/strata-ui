@@ -67,6 +67,7 @@ export const ghost: Story = {
     variant: 'ghost',
   },
 };
+
 export const link: Story = {
   args: {
     variant: 'link',

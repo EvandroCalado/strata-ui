@@ -11,7 +11,7 @@ const buttonStyles = cva(
     'rounded-md',
     'font-semibold',
     'focus:outline-primary-500',
-    'disabled:pointer-events-none disabled:opacity-50',
+    'disabled:pointer-events-none disabled:opacity-10',
     'transition-colors',
     'duration-150',
     'cursor-pointer',
@@ -38,11 +38,13 @@ const buttonStyles = cva(
     compoundVariants: [
       {
         variant: 'primary',
-        className: 'bg-primary-500 text-white hover:bg-primary-600',
+        className:
+          'bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200',
       },
       {
         variant: 'secondary',
-        className: 'bg-primary-100 text-gray-800 hover:bg-primary-200',
+        className:
+          'bg-primary-200 text-primary-900 hover:bg-primary-300 dark:bg-primary-800 dark:text-primary-100 dark:hover:bg-primary-700',
       },
       {
         variant: 'destructive',
@@ -52,16 +54,17 @@ const buttonStyles = cva(
       {
         variant: 'outline',
         className:
-          'text-primary-600 border-[1px] border-primary-600 bg-transparent hover:bg-primary-100',
+          'text-primary-900 border-[1px] border-primary-600 bg-transparent hover:bg-primary-200 dark:text-primary-100 dark:hover:bg-primary-800',
       },
       {
         variant: 'ghost',
-        className: 'text-primary-600 bg-transparent hover:bg-primary-100',
+        className:
+          'text-primary-800 bg-transparent hover:bg-primary-200 dark:text-primary-200 dark:hover:bg-primary-800',
       },
       {
         variant: 'link',
         className:
-          'text-primary-600 focus:outline-none focus:outline-0 focus:text-primary-700 bg-transparent hover:underline hover:underline-offset-4',
+          'text-primary-800 focus:outline-none focus:outline-0 focus:text-primary-600 bg-transparent hover:underline hover:underline-offset-4 dark:text-primary-200 dark:focus:text-primary-400',
       },
     ],
     defaultVariants: {

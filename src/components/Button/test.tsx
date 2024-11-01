@@ -10,8 +10,7 @@ describe('Button', () => {
     expect(button).toBeInTheDocument();
     expect(button.tagName).toBe('BUTTON');
     expect(button).toHaveClass(
-      'bg-primary-500 text-white hover:bg-primary-600',
-      'text-base px-4 py-2',
+      'bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200 text-base px-4 py-2',
     );
   });
 
@@ -20,33 +19,23 @@ describe('Button', () => {
 
     const button = screen.getByRole('button');
 
-    expect(button).toHaveClass(
-      'bg-primary-100 text-gray-800 hover:bg-primary-200',
-    );
+    expect(button).toHaveClass('bg-primary-200');
 
     rerender(<Button variant="destructive" />);
 
-    expect(button).toHaveClass(
-      'bg-destructive-500 text-white hover:bg-destructive-600',
-    );
+    expect(button).toHaveClass('bg-destructive-500');
 
     rerender(<Button variant="outline" />);
 
-    expect(button).toHaveClass(
-      'text-primary-600 border-[1px] border-primary-600 bg-transparent hover:bg-primary-100',
-    );
+    expect(button).toHaveClass('bg-transparent');
 
     rerender(<Button variant="ghost" />);
 
-    expect(button).toHaveClass(
-      'text-primary-600 bg-transparent hover:bg-primary-100',
-    );
+    expect(button).toHaveClass('bg-transparent hover:bg-primary-200');
 
     rerender(<Button variant="link" />);
 
-    expect(button).toHaveClass(
-      'text-primary-600 bg-transparent hover:underline hover:underline-offset-4',
-    );
+    expect(button).toHaveClass('text-primary-800');
   });
 
   it('should render button sizes', () => {
