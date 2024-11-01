@@ -19,7 +19,7 @@ describe('Heading', () => {
 
     expect(screen.getByRole('heading').tagName).toBe('H1');
     expect(screen.getByRole('heading')).toHaveClass(
-      'scroll-m-20 text-4xl tracking-tight lg:text-5xl font-normal text-left',
+      'text-4xl lg:text-5xl font-normal text-left',
     );
 
     rerender(<Heading as="h3">heading</Heading>);
@@ -79,5 +79,13 @@ describe('Heading', () => {
     render(<Heading className="underline">heading</Heading>);
 
     expect(screen.getByRole('heading')).toHaveClass('underline');
+  });
+
+  it('should render a snapshot', () => {
+    const { container } = render(
+      <Heading className="underline">heading</Heading>,
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

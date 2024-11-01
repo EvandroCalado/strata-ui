@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > should render a snapshot 1`] = `
+<h2
+  class="text-primary-900 dark:text-primary-100 font-normal text-left scroll-m-20 text-3xl tracking-tight lg:text-4xl underline"
+>
+  heading
+</h2>
+`;
