@@ -11,7 +11,7 @@
     "test": "vitest",
     "test:coverage": "vitest --coverage --run",
     "test:staged": "vitest run --changed",
-    "deploy:storybook": "npm run build-storybook && gh-pages -d storybook-static",
+    "deploy:storybook": "gh-pages -d storybook-static",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky"
