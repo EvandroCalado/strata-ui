@@ -1,3 +1,4 @@
+import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
 import '../src/index.css';
 import strataTheme from './strata-theme';
@@ -14,6 +15,15 @@ const preview: Preview = {
       theme: strataTheme,
     },
   },
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: '',
+        dark: 'dark',
+      },
+      defaultTheme: 'light',
+    }),
+  ],
 };
 
 export default preview;
