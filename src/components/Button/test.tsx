@@ -8,6 +8,7 @@ describe('Button', () => {
     const button = screen.getByRole('button', { name: /button/i });
 
     expect(button).toBeInTheDocument();
+    expect(button.tagName).toBe('BUTTON');
     expect(button).toHaveClass(
       'bg-primary-500 text-white hover:bg-primary-600',
       'text-base px-4 py-2',
@@ -83,6 +84,16 @@ describe('Button', () => {
     const button = screen.getByRole('button');
 
     expect(button).toBeDisabled();
+  });
+
+  it('should render button as a link', () => {
+    render(<Button as="a" href="/" />);
+
+    const button = screen.getByRole('link');
+
+    expect(button).toBeInTheDocument();
+    expect(button.tagName).toBe('A');
+    expect(button).toHaveAttribute('href', '/');
   });
 
   it('should ensure button called onClick when is passed', () => {

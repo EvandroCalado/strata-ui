@@ -14,6 +14,7 @@ const buttonStyles = cva(
     'disabled:pointer-events-none disabled:opacity-50',
     'transition-colors',
     'duration-150',
+    'cursor-pointer',
   ],
   {
     variants: {
@@ -70,11 +71,21 @@ const buttonStyles = cva(
   },
 );
 
-type ButtonProps = ComponentProps<'button'> & VariantProps<typeof buttonStyles>;
+type ButtonProps = ComponentProps<'button'> &
+  ComponentProps<'a'> &
+  VariantProps<typeof buttonStyles> & {
+    as?: React.ElementType;
+  };
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant, size, isLoading, className, ...props }, ref) => (
-    <button
+export const Button = forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps
+>(
+  (
+    { variant, size, isLoading, as: Component = 'button', className, ...props },
+    ref,
+  ) => (
+    <Component
       className={cn(buttonStyles({ variant, size, isLoading, className }))}
       ref={ref}
       {...props}
@@ -84,6 +95,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
       )}
       {props.children}
-    </button>
+    </Component>
   ),
 );

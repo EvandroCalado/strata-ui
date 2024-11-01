@@ -27,6 +27,10 @@ const meta: Meta = {
     isLoading: {
       control: 'boolean',
     },
+    as: {
+      control: 'select',
+      options: ['button', 'a'],
+    },
   },
   parameters: {
     layout: 'centered',
@@ -66,6 +70,9 @@ export const ghost: Story = {
 export const link: Story = {
   args: {
     variant: 'link',
+    as: 'a',
+    href: 'https://storybook.js.org',
+    target: '_blank',
   },
 };
 
