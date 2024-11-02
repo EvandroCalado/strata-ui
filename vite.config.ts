@@ -7,7 +7,11 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   plugins: [
     react(),
-    dts({ rollupTypes: true, tsconfigPath: './tsconfig.app.json' }),
+    dts({
+      rollupTypes: true,
+      insertTypesEntry: true,
+      tsconfigPath: './tsconfig.app.json',
+    }),
   ],
   resolve: {
     alias: {
