@@ -24,6 +24,7 @@ export default defineConfig({
     include: ['src/**/{test,spec}.{ts,tsx}'],
   },
   build: {
+    outDir: 'dist',
     lib: {
       entry: 'src/components/index.ts',
       name: 'strata-ui',
