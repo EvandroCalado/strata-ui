@@ -28,7 +28,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: '.',
     lib: {
       entry: 'src/components/index.ts',
       name: 'strata-ui',
