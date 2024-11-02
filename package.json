@@ -8,7 +8,6 @@
   ],
   "main": "dist/strata-ui.cjs",
   "module": "dist/strata-ui.js",
-  "types": "dist/strata-ui.d.ts",
   "exports": {
     ".": {
       "import": "./dist/strata-ui.js",
