@@ -4,21 +4,21 @@
 
 "Strata é o plural de "stratum," um termo em latim que significa "camada" ou "nível." No contexto do design, Strata sugere algo com múltiplas camadas ou dimensões, o que pode remeter à ideia de formas sobrepostas, níveis de profundidade ou um sistema bem estruturado. É uma palavra que carrega uma sensação de organização e complexidade elegante."
 
-Aqui está um exemplo de README para sua biblioteca de componentes **Strata UI**:
-
----
-
 # Strata UI
 
 Strata UI é uma biblioteca de componentes construída com React e Tailwindcss, projetada para oferecer uma experiência de desenvolvimento rápida, moderna e leve. Nossa missão é fornecer componentes reutilizáveis e altamente customizáveis que facilitam a criação de interfaces de usuário coesas e acessíveis.
 
 ## Tabela de Conteúdos
 
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Documentação](#documentação)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
+- [Strata UI](#strata-ui)
+  - [Tabela de Conteúdos](#tabela-de-conteúdos)
+  - [Instalação](#instalação)
+  - [Uso](#uso)
+  - [Documentação](#documentação)
+    - [Componentes](#componentes)
+  - [Contribuindo](#contribuindo)
+    - [Requisitos de Contribuição](#requisitos-de-contribuição)
+  - [Licença](#licença)
 
 ---
 
@@ -26,7 +26,29 @@ Strata UI é uma biblioteca de componentes construída com React e Tailwindcss, 
 
 Para instalar a biblioteca em seu projeto, use o npm ou o yarn:
 
+```bash
+npm i strata-ui
+# ou
+yarn add strata-ui
+```
+
 ## Uso
+
+```jsx
+import React from 'react';
+import { Button } from 'strata-ui';
+
+function App() {
+  return (
+    <div>
+      <h1>Bem-vindo ao Strata UI</h1>
+      <Button variant="primary" onClick={() => alert('Olá, Strata!')} />
+    </div>
+  );
+}
+
+export default App;
+```
 
 ## Documentação
 
