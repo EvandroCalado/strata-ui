@@ -4,7 +4,7 @@ export default create({
   base: 'dark',
   brandTitle: 'Strata UI',
   brandUrl: 'https://github.com/EvandroCalado',
-  brandImage: '/logo-dark.png',
+  brandImage: './logo-dark.png',
   brandTarget: '_blank',
 
   // Typography
