@@ -31,6 +31,11 @@ npm i strata-ui
 # ou
 yarn add strata-ui
 ```
+Adicione esse import no arquivo principal da nua aplicação:
+
+```bach
+import "strata-ui/style.css";
+```
 
 ## Uso
 
