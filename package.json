@@ -13,8 +13,7 @@
   "exports": {
     ".": {
       "import": "./dist/strata-ui.js",
-      "require": "./dist/strata-ui.cjs",
-      "style": "./dist/style.css"
+      "require": "./dist/strata-ui.cjs"
     },
     "./style.css": "./dist/style.css"
   },
