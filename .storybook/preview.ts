@@ -1,6 +1,6 @@
 import { withThemeByClassName } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react';
-import '../src/index.css';
+import '../src/style.css';
 import strataTheme from './strata-theme';
 
 const preview: Preview = {
