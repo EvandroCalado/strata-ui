@@ -33,7 +33,7 @@ yarn add strata-ui
 ```
 Adicione esse import no arquivo principal da nua aplicação:
 
-```bach
+```jsx
 import "strata-ui/style.css";
 ```
 
