@@ -3,7 +3,6 @@
   "private": false,
   "version": "0.0.10",
   "type": "module",
-  "style": "./dist/style.css",
   "files": [
     "dist",
     "dist/style.css"
@@ -15,7 +14,8 @@
     ".": {
       "import": "./dist/strata-ui.js",
       "require": "./dist/strata-ui.cjs"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
