@@ -44,11 +44,4 @@ export default defineConfig({
       },
     },
   },
-  css: {
-    preprocessorOptions: {
-      css: {
-        additionalData: `@import 'strata-ui/dist/style.css';`,
-      },
-    },
-  },
 });

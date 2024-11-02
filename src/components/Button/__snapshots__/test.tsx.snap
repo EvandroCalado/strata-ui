@@ -2,6 +2,6 @@
 
 exports[`Button > should match snapshot 1`] = `
 <button
-  class="w-full flex items-center gap-2 rounded-md font-semibold focus:outline-primary-500 disabled:pointer-events-none disabled:opacity-10 transition-colors duration-150 cursor-pointer text-base px-4 py-2 bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200"
+  class="flex items-center gap-2 rounded-md font-semibold focus:outline-primary-500 disabled:pointer-events-none disabled:opacity-10 transition-colors duration-150 cursor-pointer text-base px-4 py-2 bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200"
 />
 `;
