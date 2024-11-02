@@ -1,10 +1,11 @@
 /// <reference types="vitest" />
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), dts({ rollupTypes: true })],
   resolve: {
     alias: {
       '@': '/src',
@@ -21,5 +22,22 @@ export default defineConfig({
       exclude: ['src/**/index.ts', 'src/**/stories.{ts,tsx}'],
     },
     include: ['src/**/{test,spec}.{ts,tsx}'],
+  },
+  build: {
+    lib: {
+      entry: 'src/components/index.ts',
+      name: 'strata-ui',
+      formats: ['es', 'cjs'],
+      fileName: 'strata-ui',
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
   },
 });
