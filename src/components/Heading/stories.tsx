@@ -40,3 +40,16 @@ export default meta;
 type Story = StoryObj<typeof Heading>;
 
 export const Default: Story = {};
+
+export const Sizes: Story = {
+  render: (args) => (
+    <div>
+      <Heading {...args} as={'h1'} />
+      <Heading {...args} as={'h2'} />
+      <Heading {...args} as={'h3'} />
+      <Heading {...args} as={'h4'} />
+      <Heading {...args} as={'h5'} />
+      <Heading {...args} as={'h6'} />
+    </div>
+  ),
+};
