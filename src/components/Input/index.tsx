@@ -5,7 +5,7 @@ import { ComponentProps, forwardRef } from 'react';
 const inputStyles = cva(
   [
     'w-full',
-    'text-zinc-900 dark:text-zinc-100 text-sm',
+    'text-zinc-900 dark:text-zinc-100',
     'border-[1px]',
     'border-primary-200 dark:border-primary-800',
     'py-2 px-4',
@@ -44,7 +44,9 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           {...props}
           className={cn(inputStyles({ error }), className)}
         />
-        <span className="text-xs text-red-500">{errorMessage}</span>
+        {errorMessage && (
+          <span className="text-xs text-red-500">{errorMessage}</span>
+        )}
       </div>
     );
   },
