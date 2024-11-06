@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import react from '@vitejs/plugin-react';
-import postcss from 'rollup-plugin-postcss';
 import { defineConfig } from 'vite';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
@@ -9,15 +9,10 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      rollupTypes: true,
       insertTypesEntry: true,
       tsconfigPath: './tsconfig.app.json',
     }),
-    postcss({
-      inject: true, // Embute o CSS no JavaScript gerado
-      extract: false, // Não gera um arquivo CSS separado
-      minimize: true, // Minifica o CSS na build de produção
-    }),
+    cssInjectedByJsPlugin(),
   ],
   resolve: {
     alias: {
@@ -37,7 +32,7 @@ export default defineConfig({
     include: ['src/**/{test,spec}.{ts,tsx}'],
   },
   build: {
-    outDir: 'dist',
+    cssCodeSplit: false,
     lib: {
       entry: 'src/components/index.ts',
       name: 'strata-ui',
@@ -51,6 +46,7 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM',
         },
+        assetFileNames: 'style.css',
       },
     },
   },
