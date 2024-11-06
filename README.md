@@ -61,7 +61,7 @@ Toda a documentação dos componentes e exemplos de uso estão disponíveis em n
 ### Componentes
 
 - **Button**: Um botão acessível e altamente customizável.
-- **Headind**: Componente de heading h1 a h6.
+- **Heading**: Componente de heading h1 a h6.
 
 ## Contribuindo
 
