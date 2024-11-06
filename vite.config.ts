@@ -1,7 +1,7 @@
 /// <reference types="vitest" />
 import react from '@vitejs/plugin-react';
+import postcss from 'rollup-plugin-postcss';
 import { defineConfig } from 'vite';
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
 
 // https://vite.dev/config/
@@ -13,7 +13,11 @@ export default defineConfig({
       insertTypesEntry: true,
       tsconfigPath: './tsconfig.app.json',
     }),
-    cssInjectedByJsPlugin(),
+    postcss({
+      inject: true, // Embute o CSS no JavaScript gerado
+      extract: false, // Não gera um arquivo CSS separado
+      minimize: true, // Minifica o CSS na build de produção
+    }),
   ],
   resolve: {
     alias: {
