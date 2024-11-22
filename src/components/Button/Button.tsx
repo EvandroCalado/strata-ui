@@ -6,6 +6,7 @@ const buttonStyles = cva(
   [
     'flex',
     'items-center',
+    'justify-center',
     'gap-2',
     'rounded-md',
     'font-semibold',

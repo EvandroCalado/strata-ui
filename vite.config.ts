@@ -23,13 +23,14 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './.test/setupTests.ts',
+
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
-      include: ['src/**/{test,spec}.{ts,tsx}'],
-      exclude: ['src/**/index.ts', 'src/**/stories.{ts,tsx}'],
+      include: ['src/**/{*.test,spec}.{ts,tsx}'],
+      exclude: ['src/**/index.ts', 'src/**/*.stories.{ts,tsx}'],
     },
-    include: ['src/**/{test,spec}.{ts,tsx}'],
+    include: ['src/**/{*.test,spec}.{ts,tsx}'],
   },
   build: {
     cssCodeSplit: false,
