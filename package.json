@@ -25,7 +25,7 @@
     "test:coverage": "vitest --coverage --run",
     "test:staged": "vitest run --changed",
     "deploy:storybook": "gh-pages -d storybook-static",
-    "deploy:npm": "npm version patch && npm publish --access public",
+    "deploy:npm": "pnpm version patch && pnpm publish --access public",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepare": "husky"
