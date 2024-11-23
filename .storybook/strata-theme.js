@@ -12,8 +12,8 @@ export default create({
   fontCode: 'monospace',
 
   //Colors
-  colorPrimary: '#6200EE',
-  colorSecondary: '#03DAC5',
+  colorPrimary: '#d4d4d8',
+  colorSecondary: '#4b5563',
 
   // UI
   appBg: '#121212',
@@ -23,26 +23,26 @@ export default create({
   appBorderRadius: 8,
 
   // Text colors
-  // textColor: '#03DAC5',
+  // textColor: '#4b5563',
   // textInverseColor: '#020617',
-  textMutedColor: '#03DAC5',
+  textMutedColor: '#4b5563',
 
   // Toolbar default and active colors
   // barTextColor: '#FFFFFF',
   // barSelectedColor: '#B0BEC5',
-  barHoverColor: '#03DAC5',
+  barHoverColor: '#4b5563',
   barBg: '#121212',
-  // booleanBg: '#03DAC5',
-  // booleanSelectedBg: '#03DAC5',
+  // booleanBg: '#4b5563',
+  // booleanSelectedBg: '#4b5563',
   // gridCellSize: 40,
 
   // Button colors
-  // buttonBg: '#6200EE',
-  // buttonBorder: '#6200EE',
+  // buttonBg: '#d4d4d8',
+  // buttonBorder: '#d4d4d8',
 
   // Form colors
   inputBg: '#121212',
-  // inputBorder: '#03DAC5',
-  // inputTextColor: '#03DAC5',
+  // inputBorder: '#4b5563',
+  // inputTextColor: '#4b5563',
   inputBorderRadius: 4,
 });
