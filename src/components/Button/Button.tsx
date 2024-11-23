@@ -64,7 +64,7 @@ const buttonStyles = cva(
       {
         variant: 'link',
         className:
-          'text-primary-800 focus:outline-none focus:outline-0 focus:text-primary-600 bg-transparent hover:underline hover:underline-offset-4 dark:text-primary-200 dark:focus:text-primary-400',
+          'text-primary-800 focus:outline-none focus:outline-0 focus:text-primary-600 bg-transparent hover:underline hover:underline-offset-4 dark:text-primary-200 dark:focus:text-primary-400 p-0',
       },
     ],
     defaultVariants: {
