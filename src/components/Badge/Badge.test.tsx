@@ -42,4 +42,10 @@ describe('<Badge />', () => {
 
     expect(onClick).toHaveBeenCalledTimes(1);
   });
+
+  it('should render a snapshot', () => {
+    const { container } = render(<Badge>badge</Badge>);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
