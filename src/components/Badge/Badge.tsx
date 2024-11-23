@@ -4,6 +4,7 @@ import { ComponentProps, forwardRef } from 'react';
 
 const badgeStyles = cva(
   [
+    'w-max',
     'flex',
     'items-center',
     'justify-center',

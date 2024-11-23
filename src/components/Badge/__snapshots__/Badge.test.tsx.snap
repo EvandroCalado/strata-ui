@@ -2,7 +2,7 @@
 
 exports[`<Badge /> > should render a snapshot 1`] = `
 <span
-  class="flex items-center justify-center gap-2 rounded-full font-semibold text-xs px-2 py-0.5 transition-colors duration-150 bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200"
+  class="w-max flex items-center justify-center gap-2 rounded-full font-semibold text-xs px-2 py-0.5 transition-colors duration-150 bg-primary-900 text-primary-100 hover:bg-primary-800 dark:bg-primary-100 dark:text-primary-900 dark:hover:bg-primary-200"
 >
   badge
 </span>
