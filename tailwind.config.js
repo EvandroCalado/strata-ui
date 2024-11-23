@@ -7,7 +7,6 @@ export default {
     extend: {
       colors: {
         primary: colors.zinc,
-        destructive: colors.red,
       },
     },
   },

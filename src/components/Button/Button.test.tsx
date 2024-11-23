@@ -23,7 +23,7 @@ describe('Button', () => {
 
     rerender(<Button variant="destructive" />);
 
-    expect(button).toHaveClass('bg-destructive-500');
+    expect(button).toHaveClass('bg-red-500');
 
     rerender(<Button variant="outline" />);
 

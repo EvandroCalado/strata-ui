@@ -49,7 +49,7 @@ const buttonStyles = cva(
       {
         variant: 'destructive',
         className:
-          'bg-destructive-500 focus:outline-destructive-500 text-white hover:bg-destructive-600',
+          'bg-red-500 focus:outline-red-500 text-white hover:bg-red-600',
       },
       {
         variant: 'outline',
