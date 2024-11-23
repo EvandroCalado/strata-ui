@@ -1,0 +1,1 @@
+import{j as t}from"./jsx-runtime-CkxqCPlQ.js";import{c as a}from"./index-nCncktCR.js";import{r as e}from"./index-DJO9vBfz.js";const i=e.forwardRef(({className:r,...o},s)=>t.jsx("p",{...o,ref:s,className:a(r)}));i.__docgenInfo={description:"",methods:[],displayName:"CardDescription"};export{i as C};
