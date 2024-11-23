@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Card /> > should render a snapshot 1`] = `
+<article
+  class="space-y-4"
+/>
+`;

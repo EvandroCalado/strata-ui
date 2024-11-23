@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<CardHeader /> > should render a snapshot 1`] = `
+<header
+  class=""
+/>
+`;

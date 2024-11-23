@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<CardFooter /> > should render a snapshot 1`] = `
+<footer
+  class=""
+/>
+`;

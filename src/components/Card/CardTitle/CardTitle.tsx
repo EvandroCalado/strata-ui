@@ -15,8 +15,8 @@ export const CardTitle = forwardRef<HTMLHeadingElement, CardTitleProps>(
           className,
         )}
       >
-        <span>Card Title</span>
-        {icon && <ArrowUpRight />}
+        {props.children}
+        {icon && <ArrowUpRight data-testid="icon" />}
       </h1>
     );
   },

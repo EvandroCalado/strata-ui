@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<CardContent /> > should render a CardContent by default 1`] = `
+<main
+  class=""
+/>
+`;
+
+exports[`<CardContent /> > should render a snapshot 1`] = `
+<main
+  class=""
+/>
+`;

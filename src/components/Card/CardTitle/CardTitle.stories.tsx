@@ -5,6 +5,9 @@ import { CardTitle } from '.';
 const meta: Meta = {
   title: 'Components/Card/CardTitle',
   component: CardTitle,
+  args: {
+    children: 'Card Title',
+  },
   parameters: {
     layout: 'centered',
   },
@@ -16,6 +19,7 @@ type Story = StoryObj<typeof CardTitle>;
 
 export const WithIcon: Story = {
   args: {
+    children: 'Card Title',
     icon: true,
   },
 };

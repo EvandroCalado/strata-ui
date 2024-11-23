@@ -1,0 +1,8 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<CardImage /> > should render a snapshot 1`] = `
+<img
+  class=""
+  src="test.png"
+/>
+`;
