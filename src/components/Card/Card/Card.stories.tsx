@@ -26,7 +26,10 @@ export const Default: Story = {
   render: () => (
     <Card className="w-full max-w-[384px]">
       <CardHeader>
-        <CardImage src="/strata-card.png" alt="Strata Card" />
+        <CardImage
+          src="https://res.cloudinary.com/dx2lwce8m/image/upload/v1732385825/strata-ui/ir0td4f7hgfrdbw7hhmo.png"
+          alt="Strata Card"
+        />
       </CardHeader>
 
       <CardContent>
