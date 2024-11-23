@@ -2,7 +2,7 @@ import { cn } from '@/utils';
 import { cva, VariantProps } from 'class-variance-authority';
 import { ComponentProps, forwardRef } from 'react';
 
-const headingStyles = cva('text-primary-900 dark:text-primary-100', {
+const headingStyles = cva('', {
   variants: {
     as: {
       h1: '',
