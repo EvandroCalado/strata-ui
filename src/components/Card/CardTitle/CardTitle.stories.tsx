@@ -17,10 +17,8 @@ export default meta;
 
 type Story = StoryObj<typeof CardTitle>;
 
-export const WithIcon: Story = {
+export const Default: Story = {
   args: {
     children: 'Card Title',
   },
 };
-
-export const WithoutIcon: Story = {};
