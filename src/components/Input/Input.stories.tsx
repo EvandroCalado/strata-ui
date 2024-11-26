@@ -24,6 +24,12 @@ type Story = StoryObj<typeof Input>;
 
 export const Default: Story = {};
 
+export const WithLabel: Story = {
+  args: {
+    label: 'Name',
+  },
+};
+
 export const Password: Story = {
   args: {
     placeholder: 'Password',
