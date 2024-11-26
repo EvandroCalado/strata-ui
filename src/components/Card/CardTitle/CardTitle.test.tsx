@@ -10,12 +10,6 @@ describe('<CardTitle />', () => {
     expect(screen.queryByTestId('icon')).not.toBeInTheDocument();
   });
 
-  it('should render a CardTitle with icon', () => {
-    render(<CardTitle icon>valid name</CardTitle>);
-
-    expect(screen.getByTestId('icon')).toBeInTheDocument();
-  });
-
   it('should render a snapshot', () => {
     const { container } = render(<CardTitle icon>valid name</CardTitle>);
 

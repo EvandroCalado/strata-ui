@@ -1,5 +1,6 @@
 import { cn } from '@/utils';
 import { cva, VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
 import { ComponentProps, forwardRef } from 'react';
 
 const inputStyles = cva(
@@ -43,7 +44,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={label}
-            className={cn({
+            className={clsx('text-sm', {
               'pointer-events-none opacity-40': props.disabled,
             })}
           >
@@ -57,7 +58,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           className={cn(inputStyles({ error }), className)}
         />
         {errorMessage && (
-          <span className="w-max text-xs text-red-500">{errorMessage}</span>
+          <span className="text-xs text-red-500 w-max">{errorMessage}</span>
         )}
       </div>
     );

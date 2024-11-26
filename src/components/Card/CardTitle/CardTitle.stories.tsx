@@ -20,7 +20,6 @@ type Story = StoryObj<typeof CardTitle>;
 export const WithIcon: Story = {
   args: {
     children: 'Card Title',
-    icon: true,
   },
 };
 
