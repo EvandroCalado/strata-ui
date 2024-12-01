@@ -1,0 +1,1 @@
+import{j as s}from"./jsx-runtime-CkxqCPlQ.js";import{c as m}from"./index-D2SpNwgl.js";import{r as e}from"./index-DJO9vBfz.js";const t=e.forwardRef(({className:r,...o},a)=>s.jsx("img",{ref:a,...o,className:m(r)}));t.__docgenInfo={description:"",methods:[],displayName:"CardImage"};export{t as C};
