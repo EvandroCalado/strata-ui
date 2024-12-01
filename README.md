@@ -5,7 +5,7 @@ Strata é o plural de "stratum," um termo em latim que significa "camada" ou "n�
 
 # Strata UI
 
-Strata UI é uma biblioteca de componentes construída com React e Tailwindcss, projetada para oferecer uma experiência de desenvolvimento rápida, moderna e leve. Nossa missão é fornecer componentes reutilizáveis e altamente customizáveis que facilitam a criação de interfaces de usuário coesas e acessíveis.
+Strata UI é uma biblioteca de componentes construída com React e Tailwindcss, projetada para oferecer uma experiência de desenvolvimento rápida, moderna e leve. Nossa missão é fornecer componentes reutilizáveis e altamente customizáveis que se comportem o mais próximo possivel de uma tag do HTML, facilitando a criação de interfaces de usuário coesas e acessíveis.
 
 ## Tabela de Conteúdos
 
@@ -55,8 +55,11 @@ Toda a documentação dos componentes e exemplos de uso estão disponíveis em n
 
 ### Componentes
 
-- **Button**: Um botão acessível e altamente customizável.
-- **Heading**: Componente de heading h1 a h6.
+- **Badge**
+- **Button**
+- **Card**
+- **Heading**
+- **Input**
 
 ## Contribuindo
 
